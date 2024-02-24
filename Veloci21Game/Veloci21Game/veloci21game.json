@@ -1,0 +1,5 @@
+{
+  "Serilog": {
+    "WriteTo:1:Args:path": "C:/VelociFamily/Veloci21Game - .log"
+  }
+}
