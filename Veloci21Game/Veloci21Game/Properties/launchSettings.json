@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Veloci21Game": {
+      "commandName": "Project",
+      "commandLineArgs": "Bob Lindy Sam"
+    }
+  }
+}
