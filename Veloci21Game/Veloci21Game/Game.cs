@@ -23,7 +23,10 @@ public class Game(ILogger<Game> logger) : IGame
     {
         Logger.LogInformation("Enter Player 1 Name:");
         var name = Console.ReadLine();
-        return new
+        return new Player
+        {
+
+        };
     }
 
     public Player Player1 { get; set; }
