@@ -20,7 +20,7 @@ class Program
             services.AddHostedService<MyService>();
         });
         builder.UseSerilog();
-        builder.UseWindowsService(options => options.ServiceName = "Bob Service");
+        builder.UseWindowsService(options => options.ServiceName = "Bob Service");ser
         builder.Build().Run();
     }
 }

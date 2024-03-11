@@ -11,13 +11,13 @@ public static class ConfigurationFactory
     {
         var configurationRoot = new ConfigurationBuilder()
             .SetBasePath(AppContext.BaseDirectory)
-            .AddJsonFile($"{GetEliAssemblyShortName()}.json", true, true)
+            .AddJsonFile($"{GetAssemblyShortName()}.json", true, true)
             .AddJsonFile(Environment.GetEnvironmentVariable("SETTINGS_PATH") ?? "settings.json", true, true)
             .Build();
         return configurationRoot;
     }
 
-    private static string GetEliAssemblyShortName()
+    private static string GetAssemblyShortName()
     {
         var assemblyName = Assembly.GetEntryAssembly()?.GetName().Name?.Split('.').LastOrDefault();
         return string.IsNullOrWhiteSpace(assemblyName) ? "appsettings" : assemblyName.ToLowerInvariant();
